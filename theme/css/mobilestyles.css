@@ -1,0 +1,92 @@
+@media  (max-width: 767px) { 
+
+.form__cta {
+background-color: #ffff;
+height:348px;
+}
+
+.form__cta2 {
+background-color: #f5f4ee;
+position: relative;   
+height:348px; 
+font-size:12px;
+}
+.gn_careers {
+margin-right: 56px;
+
+}
+.gn_careers:hover{
+ color: #ddd;
+}
+.policies_tmp{
+background-color:#f5f4ee;
+height:379px;
+
+}
+
+
+}
+
+@media only screen (min-width: 768px) { 
+
+.form__cta {
+background-color: #ffff;
+height:348px;
+}
+
+.form__cta2 {
+background-color: #f5f4ee !important;
+position: relative;   
+height:348px; 
+font-size:12px;
+}
+.gn_careers {
+margin-right: 56px;
+
+}
+.gn_careers:hover{
+ color: #ddd;
+}
+.policies_tmp{
+background-color:#f5f4ee;
+height:379px;
+
+}
+
+
+}
+
+
+@media (min-width: 991px) {
+
+
+
+#global_navigation .logo .logo__image  {
+padding-left:30px;
+
+}
+
+.form__cta {
+background-color: #ffff;
+height:348px;
+}
+
+.form__cta2 {
+background-color: #f5f4ee;
+position: relative;   
+height:348px; 
+}
+.gn_careers {
+margin-right: 56px;
+
+}
+.gn_careers:hover{
+ color: #ddd;
+}
+.policies_tmp{
+background-color:#f5f4ee;
+height:379px;
+
+}
+
+}
