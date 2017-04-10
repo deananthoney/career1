@@ -6978,7 +6978,9 @@ li#lang-en-text  li#lang-jp-text  {font-size: 1.325rem;}
 .private-policy-eeo{margin: auto;text-align:center;background-color:#fff;padding-top:10px;} .private-policy-eeo p {width:100%;}.eeo{text-align:center;}
 .eeo p a:link {color:##375f92 !important;}
 .private-policy-eeo .firm p{width:500px;text-align:center;margin: auto;}
-
+/*****Navs*****/ nav-main .nav-main-action { position: relative;line-height: 60px;display: block;color: #fff;float: right; padding: 0 17.31px;text-decoration: none;}
+.nav-main--open .nav-main-action {color: transparent!important;}
+.nav-main .nav-main-action {position: relative;line-height: 60px;display: block;color: #fff;float: right;padding: 0 17.31px;text-decoration: none;}
 
 
 
