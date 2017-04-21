@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js ie8 oldie" lang="en"><![endif]-->
-<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js en" lang="en"><!--<![endif]-->
+<html class="no-js en" lang="en">
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -28,9 +26,11 @@
 <!-- END -->
 <link rel="stylesheet" href="theme/css/main.css"> 
 <link href="theme/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!--<link rel="stylesheet" href="theme/css/bootstrap.min.css">-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>   
-<body>
+<body class="jpmc" data-has-url-params="false" data-ng-app="jpmorganApp" data-tracking="" data-utilities="" data-country='U.S.A.' data-region='Americas'>
+
 
 
 <!--Header Box 
@@ -65,43 +65,83 @@
       </ul>
     </li>
   </ul>
-</nav></div>
-</header>-->
+</nav></div>-->
 
+	<!--Header -->
+<main role="main">
+<header class="header" id="header" data-ng-show="usertypeSelected === 'student-apply' || usertypeSelected === 'student-explore' || usertypeSelected === 'experienced-professional'" style="display:none;">
+    <div class="container colnorightpadding-xs colnorightpadding-sm">
+      <div class="row">
+        <div class="col-xs-8 col-sm-4 colnoleftpadding-small-up">
+          <div class="logo">
+            <a href="/careers" id="homepage-link" title="JP Morgan"><img alt="JPMorgan" class="logo__image" src="\theme\images\jpmorgan-chase-logo-light.svg"></a>
+          </div>
+        </div>
+        <div class="nav-main__container col-xs-4 col-sm-8 colnoleftpadding-small-up colnorightpadding-small-up" id="nav-main__container">
+		<nav class="nav-main" id="nav-main">
+			<a class="nav-main-action js-toggle-action" href="javascript:;" id="nav-main-action">Menu</a>
+			<ul class="js-toggle-content" id="nav-main-content">
+				<li class='only-on-small'>
+				<a href='/careers/' id='homepage-link' title="Home">Home</a>
+				</li>
+				<li>
+				<a href='/careers/divisions' id='divisions__link' title="Divisions">Divisions</a>
+				</li>
+				<li>
+				<a href='/careers/locations' id='locations__link' title="Locations">Locations</a>
+				</li>
+				<li>
+				<a href='/careers/programs' id='programs__link' title="Programs">Programs</a>
+				</li>
+				<li>
+				<a href='/careers/why-us' id='whyus__link' title="Why Us">Why Us</a>
+				</li>
+				<li class="dropdown">
+					<span class="dropdown__title--sm" id="apply-label-mobile">Apply</span> 
+					<a class="dropdown__title" href="javascript:;">
+						<span id="apply-label">Apply</span> 
+						<span class="dropdown__icon--env"><i class="dropdown__icon icon-arrow-down-fill"></i></span>
+					</a>
+					<ul>
+						<li>
+						<a href="/careers/apply-students" id="apply-student-prog__link" title="Student Programs">Student Programs</a>
+						</li>
+						<li>
+						<a href="/careers/student-events" id="apply-student-events__link" title="Student Events">Student Events</a>
+						</li>
+						<li>
+						<a href="/careers/apply-experienced" id="apply-exp-roles__link" title="Experienced Roles">Experienced Roles</a>
+						</li>
+						<li>
+						<a href="/careers/advice" id="need-addvice__link" title="Need Advice?">Need Advice?</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--END -->
 
-<!--
-<main role="main">-->
-	
-			
-		
-			
-			
-			
-
-	<!-- END -->
 					<div id="tmp_header">
-						
-
-<!--EMD-->
-<!--Header Boxr -->
-	
-						<div id="tmp_header_wrapper">
+<!--Header Box -->
+<div id="tmp_header_wrapper">
 							<div>
 								<div  id="global_navigation_wrapper">
 									<div id="global_navigation">
 										<div class="logo">
           <a id="homepage-link" href="https://www.jpmorganchase.com/" title="JP Morgan">
 		  	    		<img class="logo__image" src="theme/images/_jpmorgan-chase-logo-light.svg" alt="JP Morgan"/>
-	    		<!--<img class="logo__image" src="/careersection/theme/241182/1138429431513/en/theme/images/_jpmorgan-chase-logo-light.svg" alt="JP Morgan"/>-->
+
 	    </a>
         									</div>
 
 									</div>
 
                   			</div>
-                       
-
-										<div id="gn_links">
+	<div id="gn_links">
 											<div id="gn_links_wrapper">
 												<div id="quote">
 											<!--<a class="gn_bold" href="http://www.jpmorgan.com/pages/jpmorgan">JPMORGAN.COM</a> &nbsp;<span>|</span>&nbsp;
@@ -113,12 +153,8 @@
 										</div>
 									</div>
 									<!--<div>-->
-								
-							
-								<!-- global_navigation_wrapper -->
-						
-             
-							<!-- global_navigation -->
+	<!-- global_navigation_wrapper -->
+		<!-- global_navigation -->
 
 					<div id="tmp_body" style="background-color:#ffffff; font-size:10px;">
 
@@ -134,18 +170,12 @@
 						<!-- hero -->
 							
 					</div>
-
 <!-- END -->
 <!-- White Template -->
-
 <div id="white_tmp">
 	<div id="hero" class="hero hero__light">
-
-
 <!--Search -->
-
-
-  <div id="applyexp-roles" class="bg-white module-padding-large-both">
+ <div id="applyexp-roles" class="bg-white module-padding-large-both">
     <div id="applyexp-intro" class="container">
       <div class="row">
         <div id="apply-experienced-page-intro" class="col-xs-12 col-sm-8 col-sm-push-2"><article class="title-desc margin-bottom-md">
@@ -154,10 +184,7 @@
 </article></div>
       </div>
     </div>
-
-
-
-     <div id="applyexp-search" class="module-spacing-medium">
+<div id="applyexp-search" class="module-spacing-medium">
       <form data-taleo="" data-submit-url="https://jpmchase.taleo.net/careersection/2/moresearch.ftl" id="apply-role-form" name="taleoform" submit="return false;" class="jpmc" action="" target="_jpmc">
 
         <div class="container-centered">
@@ -166,8 +193,7 @@
               <input id="search-string-placehodler" type="search" class="ie-search-field" placeholder="Keyword or job number" ng-model="taleoform.keyword" />
             </div>
           </div>
-
-             <div class="row">
+  <div class="row">
             <div class="col-xs-12 col-sm-6">
               <fieldset>
                 <label id="job-area-label">Job area</label>
@@ -303,33 +329,33 @@
 
 
   <!--Refer A Candidate -->
-    <div class="row">
-<div class="col-xs-12">
+                <div class="row">
+                <div class="col-sm-12">
 
                   <div class="form__cta2">
-                    
+       
+                <div class="refer-a-candidate"> <p>Refer a candidate </p>
 
-
-                <p class="refer-a-candidate"> Refer a Candidate </p>
-
-
-               <p>
+         
+        
+          
                   <button id="experienced-button-label" type="submit" ng-click="submit($event)" class="btn btn-outline red">Experienced Professionals</button>
-
+       
+                  <button id="students-button-label" type="submit" ng-click="submit($event)" class="btn btn-outline red">Students/Graduates</button>
+             
+                
+                    </div>
+      
 
                   
-               
-                  <button id="students-button-label" type="submit" ng-click="submit($event)" class="btn btn-outline red">Students/Graduates</button>
-                </p>
-
-            
-              </div>
+        
          
            
               </div>
             </div>
 
             </div>
+          
           
              
     <!-- END if Refer A Candidate-->
@@ -341,7 +367,7 @@
 
  <!-- Accordion -->
     <ul>
-<div class="col-xs-12">
+
 
 
 	<li class="block">
@@ -381,32 +407,27 @@
        </div>
               </div>
 
-              
-              
-<!-- End of Accordion -->
 
-
-
+  <!--END-->            
+  
+<!-- Polities -->
 <div class="row">
 <div class="col-xs-12">
 
-<!-- Polities -->
+
 <div class="policies_tmp">
   
-     <h3 class="policies"> Policies &amp; resource links </h3>
+     <h3 class="policies"> Policies &amp; Resource links </h3>
 
-   <div class="options-links">
-  
-  <div class="col-md-6">  
-<ul class="options-link1">
+
+<div class="options-links">
+<ul class="options-link1 col-xs-6 text-left">
 <li><a href="#"> Technical Help</a></li>
       <li><a href="#"> Feedback and suggestions</a></li>
       <li><a href="#"> Career Management</a></li>
     </ul>
-    </div>
- 
-<div class="col-md-6"> 
-    <ul class="options-link2">
+
+    <ul class="options-link2 col-xs-6 text-left">
   <li><a href="#">Applying for Internal Positions Policy</a></li>
       <li><a href="#"> US Relocation Policy</a></li>
 
@@ -415,9 +436,10 @@
    </div>
     </div>
     </div>
+</div>
+<!-- END of Polities -->
 
-  
- <!-- Private Polccy --> 
+<!-- Private Polccy --> 
 <div class="row">
 <div class="col-xs-12">
 
@@ -435,15 +457,12 @@ If you are US or Canada applicantwith a Disability who is unable to use our onli
 <p> JPMorgan Chase is equal opportunity and affirmative action employer Disability Verteran </p>
 </div>
 </div>
-
+</div>
 <!--END --> 
-
-
 </main>
   <!--Footer -->
  
-<footer data-footer id="footer" class="footer">
-  <div class="scroll-top">
+<footer data-footer="" id="footer" class="footer"><div class="scroll-top">
     <a href="#top" title="Back to top"><i class="icon-arrow-up-fill"></i></a>
   </div>
 
@@ -457,9 +476,7 @@ If you are US or Canada applicantwith a Disability who is unable to use our onli
           <aside id="social-links-desktop" class="footer__social visible-sm-inline visible-md-inline visible-lg-inline "><a id="external-link__twitter" href="https://twitter.com/jpmorgan" class="twitter" target="_jpmc"><i class="icon-twitter-fill"></i></a>
             <a id="external-link__facebook" href="https://www.facebook.com/jpmorganchasecareers" class="facebook" target="_jpmc"><i class="icon-facebook-fill"></i></a>
             <a id="external-link__linkedin" href="https://www.linkedin.com/company/jpmorgan-chase" class="linkedin" target="_jpmc"><i class="icon-linkedin-fill"></i></a>
-            <a id="external-link__youtube" href="https://www.youtube.com/jpmorgan" class="youtube" target="_jpmc"><i class="icon-youtube-fill"></i></a>
-            <a id="external-link__instagram" href="https://www.instagram.com/jpmorgan" class="instagram" target="_jpmc"><i class="icon-instagram-fill"></i></a></aside>
-            
+            <a id="external-link__youtube" href="https://www.youtube.com/jpmorgan" class="youtube" target="_jpmc"><i class="icon-youtube-fill"></i></a></aside>
         </div>
       </div>
       <div class="row">
@@ -505,11 +522,10 @@ If you are US or Canada applicantwith a Disability who is unable to use our onli
   </div>
 </div></section></footer>
 
- <script type="text/javascript">_satellite.pageBottom();</script> 
+<!-- <script type="text/javascript">_satellite.pageBottom();</script> -->
 
 <script src="assets/scripts/vendor.js"></script>
 <script src="assets/scripts/scripts.js"></script>
 <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="//players.brightcove.net/1139173452001/a6771937-047d-4f5f-88e6-a697b37b5456_default/index.min.js"></script><script type="text/javascript">_satellite.pageBottom();</script>
-<iframe src="http://assets.adobedtm.com/cc763f5ac17182e03ec9a42976dfbbc301907d9f/scripts/satellite-55db2fc96333632b9800002c.html" style="display: none;"></iframe>
 </body></html>
